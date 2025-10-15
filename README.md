@@ -104,12 +104,12 @@ To represent both movies and TV series accurately:
 The ETL script (etl_load_data.py) performs the following steps:
 
 **1. Extract**
-   
+
     - Reads movies.csv using pandas.
     - Normalizes text encodings and removes whitespace.
 
 **2. Transform**
-   
+
     - Cleans malformed characters (e.g., â€“ → –).
     - Parses year field into year_start and year_end.
     - Converts numeric columns (gross, runtime) into consistent types.
@@ -191,4 +191,5 @@ The ETL script (etl_load_data.py) performs the following steps:
 **Mikael Andrew**
 
 *`(Created for CAD-IT Technical Take-Home Test)`*
+
 
