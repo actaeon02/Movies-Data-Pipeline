@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Optional, List, Any, Dict
 
 # Database configuration
-DB_URL = "postgresql+psycopg2://msyadm:skt890:)@localhost:5432/postgres"
+DB_URL = "postgresql+psycopg2://user:password@localhost:5432/postgres"
 CSV_PATH = Path("data/movies.csv")
 
 
