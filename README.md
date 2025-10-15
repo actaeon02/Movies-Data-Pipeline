@@ -103,19 +103,19 @@ To represent both movies and TV series accurately:
 **🔄 ETL Flow**
 The ETL script (etl_load_data.py) performs the following steps:
 
-1. Extract
+**1. Extract**
    
     - Reads movies.csv using pandas.
     - Normalizes text encodings and removes whitespace.
 
-2. Transform
+**2. Transform**
    
     - Cleans malformed characters (e.g., â€“ → –).
     - Parses year field into year_start and year_end.
     - Converts numeric columns (gross, runtime) into consistent types.
     - Optionally stores the raw row as JSON for traceability.
 
-3. Load
+**3. Load**
 
     - Connects to PostgreSQL via psycopg2 or SQLAlchemy.
     - Creates tables if not exist (using create_tables.sql).
@@ -191,3 +191,4 @@ The ETL script (etl_load_data.py) performs the following steps:
 **Mikael Andrew**
 
 *`(Created for CAD-IT Technical Take-Home Test)`*
+
